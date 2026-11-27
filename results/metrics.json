@@ -1,0 +1,212 @@
+[
+  {
+    "model": "Majority class",
+    "macro_f1": 0.2352,
+    "accuracy": 0.8884,
+    "report": {
+      "hungry": {
+        "precision": 0.8883720930232558,
+        "recall": 1.0,
+        "f1-score": 0.9408866995073891,
+        "support": 382.0
+      },
+      "tired": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 24.0
+      },
+      "belly_pain": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 16.0
+      },
+      "burping": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 8.0
+      },
+      "accuracy": 0.8883720930232558,
+      "macro avg": {
+        "precision": 0.22209302325581395,
+        "recall": 0.25,
+        "f1-score": 0.23522167487684728,
+        "support": 430.0
+      },
+      "weighted avg": {
+        "precision": 0.7892049756625202,
+        "recall": 0.8883720930232558,
+        "f1-score": 0.8358574865391224,
+        "support": 430.0
+      }
+    },
+    "confusion": [
+      [
+        382,
+        0,
+        0,
+        0
+      ],
+      [
+        24,
+        0,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0,
+        0
+      ],
+      [
+        8,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "model": "MFCC + SVM",
+    "macro_f1": 0.2339,
+    "accuracy": 0.8791,
+    "report": {
+      "hungry": {
+        "precision": 0.8873239436619719,
+        "recall": 0.9895287958115183,
+        "f1-score": 0.9356435643564357,
+        "support": 382.0
+      },
+      "tired": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 24.0
+      },
+      "belly_pain": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 16.0
+      },
+      "burping": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 8.0
+      },
+      "accuracy": 0.8790697674418605,
+      "macro avg": {
+        "precision": 0.22183098591549297,
+        "recall": 0.24738219895287958,
+        "f1-score": 0.23391089108910892,
+        "support": 430.0
+      },
+      "weighted avg": {
+        "precision": 0.7882738290206355,
+        "recall": 0.8790697674418605,
+        "f1-score": 0.8311996315910661,
+        "support": 430.0
+      }
+    },
+    "confusion": [
+      [
+        378,
+        3,
+        1,
+        0
+      ],
+      [
+        24,
+        0,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0,
+        0
+      ],
+      [
+        8,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "model": "Log-mel CNN",
+    "macro_f1": 0.1911,
+    "accuracy": 0.5279,
+    "report": {
+      "hungry": {
+        "precision": 0.9146341463414634,
+        "recall": 0.5890052356020943,
+        "f1-score": 0.7165605095541401,
+        "support": 382.0
+      },
+      "tired": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 24.0
+      },
+      "belly_pain": {
+        "precision": 0.01818181818181818,
+        "recall": 0.0625,
+        "f1-score": 0.028169014084507043,
+        "support": 16.0
+      },
+      "burping": {
+        "precision": 0.010752688172043012,
+        "recall": 0.125,
+        "f1-score": 0.019801980198019802,
+        "support": 8.0
+      },
+      "accuracy": 0.5279069767441861,
+      "macro avg": {
+        "precision": 0.23589216317383116,
+        "recall": 0.19412630890052357,
+        "f1-score": 0.19113287595916673,
+        "support": 430.0
+      },
+      "weighted avg": {
+        "precision": 0.8134120337179638,
+        "recall": 0.5279069767441861,
+        "f1-score": 0.6379889179456227,
+        "support": 430.0
+      }
+    },
+    "confusion": [
+      [
+        225,
+        32,
+        45,
+        80
+      ],
+      [
+        12,
+        0,
+        6,
+        6
+      ],
+      [
+        5,
+        4,
+        1,
+        6
+      ],
+      [
+        4,
+        0,
+        3,
+        1
+      ]
+    ]
+  }
+]
